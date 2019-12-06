@@ -57,6 +57,11 @@ export const resetUserId = () => {
 };
 
 export const track = (eventName: string, data: any) => {
+  /* eslint-disable */
+  console.log(typeof global.amplitude);
+  console.log(global.amplitude);
+  console.log(global);
+  /* eslint-enable */
   if (typeof global.amplitude !== 'undefined') {
     const currentTime = Date.now();
     if (currentTime - getLastTimeEventSent() > NEW_SESSION_TIME) {

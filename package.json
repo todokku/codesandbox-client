@@ -101,7 +101,8 @@
     ]
   },
   "engines": {
-    "node": "^10.0.0"
+    "node": "10.x",
+    "lerna": "2.4.0"
   },
   "collective": {
     "type": "opencollective",
